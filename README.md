@@ -21,5 +21,8 @@ hip5.4.23416, devtoolset-7.3.1, dtk-24.04, rocSPARSE library.
 2.  Execute the command `bash build.sh` to compile.
 3.  Execute the command `sbatch dcutest.slurm` to submit the job.
 4.  Check the generated `.out` file in the `out` directory to view the runtime results.
+5.  Note:
+(1) If there are multiple different files in the same folder and you need to run a specific file, you must modify the filename in both bash build.sh and sbatch dcutest.slurm simultaneously.
+(2) For GEMM, if you want to modify the number of test groups (t) or the matrix dimensions (M, K, N), you need to adjust the corresponding parameters in the input.txt file under the GEMM folder.
 ## 
 The SpMM algorithm in the code draws inspiration from the paper _"GE-SpMM: General-Purpose Sparse Matrix-Matrix Multiplication on GPUs for Graph Neural Networks"_ and its associated code（[https://github.com/hgyhungry/ge-spmm](https://github.com/hgyhungry/ge-spmm)），with modifications applied。
