@@ -1,4 +1,4 @@
-## Optimization of Matrix Operations on DCU
+# Optimization of Matrix Operations on DCU
 
 ## **Overview**
 
